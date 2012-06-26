@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Siof - Changelog Parser</title>
+    <meta name="author" content="Unknown" >
+    <meta name="copyright" content="Siof" >
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" >
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" >
+    <meta http-equiv="content-style-type" content="text/css ">
+    <meta http-equiv="expires" content="0" >
+    <link rel="stylesheet"  href="style.css" > 
+    
+    <script src="lightbox/js/jquery-1.7.2.min.js"></script>
+    <script src="lightbox/js/lightbox.js"></script>
+    <link rel="stylesheet" type="text/css" href="lightbox/css/lightbox.css" >
+</head>
+<body>
+    <div id="main">
+        <div id="head">
+            <a href="index.html" ><img src="img/lainhead.png" alt="" ></a>
+        </div>
+        <div id="menu">
+            <p class="menuitem" >Otwarte projekty:</p>
+            <p class="menuitem" >C++:</p>
+            <ul>
+                <li><a class="active" href="changelogparser.html" >Changelog Parser</a></li>
+                <li><a href="playerspanel.html" >Panel gracza</a></li>
+            </ul>
+            <p class="menuitem" >C#:</p>
+            <ul>
+                <li><a href="bloczek.html" >Bloczek</a></li>                
+            </ul>
+            <p class="menuitem" >Inne:</p>
+            <ul>
+                <li><a href="hellground.html" >Projekt HellGround</a></li>
+                <li><a href="oregoncore.html" >Projekt OregonCore</a></li>
+            </ul>        
+        </div>
+        <div id="additional">
+            <p class="menuitem" >Kilka linków:</p>
+            <ul>
+                <li><a href="https://bitbucket.org/siof" target="_blank" >Mój profil na BB</a></li>
+                <li><a href="https://wow.hellground.pl" target="_blank" >HellGround</a></li>
+                <li><a href="https://oregoncore.com" target="_blank" >OregonCore</a></li>
+                <li><a href="https://gentoo.org" target="_blank" >Gentoo</a></li>
+            </ul>
+        </div>  
+        <div id="content">
+            <a rel="lightbox" href="http://uploader.hellground.pl/di/7CLJ/screenshot.png" title="HG Changelog Parser" ><img class="info" src="http://uploader.hellground.pl/dt/7CLJ/screenshot.png" alt="HG Changelog Parser" /></a>
+            <h3>HG Changelog Parser</h3>
+            <p>
+                Kilka informacji:<br></br>
+                Autor: <a href="https://bitbucket.org/siof" target="_blank" >Siof</a><br>
+                Repozytorium: <a href="https://bitbucket.org/siof/hg-changelog-parser" target="_blank" >https://bitbucket.org/siof/hg-changelog-parser</a><br>
+                Typ: Aplikacja konsolowa<br>
+                Język: C++
+            </p><br>
+            <p>Opis:</p>
+            <p>
+                Mała aplikacja która powstała na potrzeby uaktualnienia oraz poprawnienia logu zmian projektu HellGround.<br>
+                <br>
+                Parsuje ona repozytorium mercuriala oraz pozwala na wygenerowanie pliku historii posiadajacego:
+                <ul>
+                    <li>pełną listę poprawek</li>
+                    <li>historię od konkretnego numeru poprawki</li>
+                    <li>konkretną ilość ostatnich poprawek</li>
+                </ul>
+                Lista zmian jest zapisywana w określonym przez użytkownika formacie, jednak musi on zawierać 3 następujące po sobie dane:<br>
+                <ul>
+                    <li>Numer reva (poprawki) - unsigned int - %u</li>
+                    <li>Autor - string - %s</li>
+                    <li>Opis - string - %s</li>
+                </ul><br>
+                Pomiędzy danymi może być jakikolwiek inny tekst nie będący tagami formatowania tekstu w C.<br>
+                Domyślnym formatem jest: <strong><span style="color: #5d7870;">[<strong>%u</strong> %s]</span></strong> %s<br><br>
+            </p>
+        </div> 
+        <div id="footer"></div>     
+    </div>
+</body>
+</html>
