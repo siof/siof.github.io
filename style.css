@@ -64,12 +64,12 @@ a:link
     color: white;
 }
 
-a:hover
+a:visited
 {
-    color: black;    
+    color: white;    
 }
 
-a:visited
+a:hover
 {
     color: black;    
 }
@@ -80,21 +80,22 @@ a.active
     font-size: 17px;
 }
 
+p + p 
+{
+    text-indent: 1.5em;
+    margin-top: 0 
+}
+
 p.menuitem
 {
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 20px;
+    text-indent: 0px;
 }
 
 img.info
 {
     float: right;
     padding-top: 40px;
-}
-
-p + p 
-{
-    text-indent: 1.5em;
-    margin-top: 0 
 }
