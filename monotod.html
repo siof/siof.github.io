@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-    <title>Siof - Changelog Parser</title>
+    <title>Siof - MonoToD</title>
     <meta name="author" content="Unknown" >
     <meta name="copyright" content="Siof" >
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" >
@@ -23,7 +23,7 @@
             <p class="menuitem" ><b>Otwarte projekty:</b></p>
             <p class="menuitem" >C++:</p>
             <ul>
-                <li><a class="active" href="changelogparser.html" >Changelog Parser</a></li>
+                <li><a href="changelogparser.html" >Changelog Parser</a></li>
                 <li><a href="playerspanel.html" >Panel gracza</a></li>
                 <li><a href="launcher.html" >Launcher</a></li>
             </ul>
@@ -34,7 +34,7 @@
             <p class="menuitem" ><b>Zamknięte projekty:</b></p>
             <p class="menuitem" >C#:</p>
             <ul>
-                <li><a href="monotod.html">MonoToD</a></li>            
+                <li><a class="active" href="monotod.html">MonoToD</a></li>            
             </ul>
             <p class="menuitem" ><b>Inne:</b></p>
             <ul>
@@ -51,40 +51,23 @@
                 <li><a href="https://oregoncore.com" target="_blank" >OregonCore</a></li>
                 <li><a href="https://gentoo.org" target="_blank" >Gentoo</a></li>
             </ul>
-        </div>  
+        </div>
         <div id="content">
-            <a rel="lightbox" href="http://uploader.hellground.pl/di/7CLJ/screenshot.png" title="HG Changelog Parser" ><img class="info" src="http://uploader.hellground.pl/dt/7CLJ/screenshot.png" alt="HG Changelog Parser" /></a>
-            <h3>HG Changelog Parser</h3>
+            <a rel="lightbox" href="http://uploader.hellground.pl/di/SVNR/screenshot.png" title="MonoToD" ><img class="info" src="http://uploader.hellground.pl/dt/SVNR/screenshot.png" alt="MonoToD" /></a>
+            <h3>MonoToD</h3>
             <p class="descr" >
                 Kilka informacji:<br><br>
                 Autor: <a href="https://bitbucket.org/siof" target="_blank" >Siof</a><br>
-                Repozytorium: <a href="https://bitbucket.org/siof/hg-changelog-parser" target="_blank" >https://bitbucket.org/siof/hg-changelog-parser</a><br>
-                Typ: Aplikacja konsolowa<br>
-                Język: C++<br>
-                System operacyjny: GNU/Linux, windows
+                Repozytorium: prywatne<br>
+                Typ: Aplikacja desktopowa<br>
+                Język: C# (Mono 2.2)<br>
+                System operacyjny: GNU/Linux, Windows
             </p><br>
             <p>Opis:</p>
             <p>
-                Mała aplikacja która powstała na potrzeby uaktualnienia oraz poprawnienia logu zmian projektu HellGround.<br>
-                <br>
-                Parsuje ona repozytorium mercuriala oraz pozwala na wygenerowanie pliku historii posiadajacego:
-            </p>
-            <ul>
-                <li>pełną listę poprawek</li>
-                <li>historię od konkretnego numeru poprawki</li>
-                <li>konkretną ilość ostatnich poprawek</li>
-            </ul>
-            <p>
-                Lista zmian jest zapisywana w formacie określonym przez użytkownika, jednak musi on zawierać 3 następujące po sobie dane:<br>
-            </p>
-            <ul>
-                <li>Numer reva (poprawki) - unsigned int - %u</li>
-                <li>Autor - string - %s</li>
-                <li>Opis - string - %s</li>
-            </ul>
-            <p>
-                Pomiędzy danymi może być jakikolwiek inny tekst nie będący tagami formatowania tekstu w C.<br>
-                Domyślnym formatem jest: <strong><span style="color: #5d7870;">[<strong>%u</strong> %s]</span></strong> %s<br><br>
+                Bardzo minimalistyczna aplikacja napisana w celu umożliwienia gry użytkownikom linuxa na serwerze Theatre of Dreams po wprowadzeniu wymuszenia posiadania launchera.
+                Aplikacja komunikuje się z serwerem dając mu przy okazji wymagane przez niego informacje dzięki czemu pozwala graczom linuxowym grać na serwerze (oryginalny launcher działał jedynie pod systemem windows). 
+                Rozwój zawieszony z powodu rezygnacji ToD z wymuszenia launchera.
             </p>
         </div> 
         <div id="footer"></div>     
