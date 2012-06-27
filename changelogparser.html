@@ -42,6 +42,7 @@
             <ul>
                 <li><a href="https://bitbucket.org/siof" target="_blank" >Mój profil na BB</a></li>
                 <li><a href="https://wow.hellground.pl" target="_blank" >HellGround</a></li>
+                <li><a href="https://dev.hellground.pl" target="_blank" >Dev HellGround</a></li>
                 <li><a href="https://oregoncore.com" target="_blank" >OregonCore</a></li>
                 <li><a href="https://gentoo.org" target="_blank" >Gentoo</a></li>
             </ul>
@@ -49,7 +50,7 @@
         <div id="content">
             <a rel="lightbox" href="http://uploader.hellground.pl/di/7CLJ/screenshot.png" title="HG Changelog Parser" ><img class="info" src="http://uploader.hellground.pl/dt/7CLJ/screenshot.png" alt="HG Changelog Parser" /></a>
             <h3>HG Changelog Parser</h3>
-            <p>
+            <p class="descr" >
                 Kilka informacji:<br><br>
                 Autor: <a href="https://bitbucket.org/siof" target="_blank" >Siof</a><br>
                 Repozytorium: <a href="https://bitbucket.org/siof/hg-changelog-parser" target="_blank" >https://bitbucket.org/siof/hg-changelog-parser</a><br>
@@ -62,17 +63,21 @@
                 Mała aplikacja która powstała na potrzeby uaktualnienia oraz poprawnienia logu zmian projektu HellGround.<br>
                 <br>
                 Parsuje ona repozytorium mercuriala oraz pozwala na wygenerowanie pliku historii posiadajacego:
-                <ul>
-                    <li>pełną listę poprawek</li>
-                    <li>historię od konkretnego numeru poprawki</li>
-                    <li>konkretną ilość ostatnich poprawek</li>
-                </ul>
-                Lista zmian jest zapisywana w określonym przez użytkownika formacie, jednak musi on zawierać 3 następujące po sobie dane:<br>
-                <ul>
-                    <li>Numer reva (poprawki) - unsigned int - %u</li>
-                    <li>Autor - string - %s</li>
-                    <li>Opis - string - %s</li>
-                </ul><br>
+            </p>
+            <ul>
+                <li>pełną listę poprawek</li>
+                <li>historię od konkretnego numeru poprawki</li>
+                <li>konkretną ilość ostatnich poprawek</li>
+            </ul>
+            <p>
+                Lista zmian jest zapisywana w formacie określonym przez użytkownika, jednak musi on zawierać 3 następujące po sobie dane:<br>
+            </p>
+            <ul>
+                <li>Numer reva (poprawki) - unsigned int - %u</li>
+                <li>Autor - string - %s</li>
+                <li>Opis - string - %s</li>
+            </ul>
+            <p>
                 Pomiędzy danymi może być jakikolwiek inny tekst nie będący tagami formatowania tekstu w C.<br>
                 Domyślnym formatem jest: <strong><span style="color: #5d7870;">[<strong>%u</strong> %s]</span></strong> %s<br><br>
             </p>

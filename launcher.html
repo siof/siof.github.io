@@ -1,14 +1,18 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-    <title>Siof - Projekt HellGround</title>
+    <title>Siof - Launcher</title>
     <meta name="author" content="Unknown" >
     <meta name="copyright" content="Siof" >
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" >
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" >
     <meta http-equiv="content-style-type" content="text/css ">
     <meta http-equiv="expires" content="0" >
-    <link rel="stylesheet"  href="style.css" > 
+    <link rel="stylesheet" type="text/css" href="style.css" > 
+    
+    <script src="lightbox/js/jquery-1.7.2.min.js"></script>
+    <script src="lightbox/js/lightbox.js"></script>
+    <link rel="stylesheet" type="text/css" href="lightbox/css/lightbox.css" >
 </head>
 <body>
     <div id="main">
@@ -21,7 +25,7 @@
             <ul>
                 <li><a href="changelogparser.html" >Changelog Parser</a></li>
                 <li><a href="playerspanel.html" >Panel gracza</a></li>
-                <li><a href="launcher.html" >Launcher</a></li>
+                <li><a class="active" href="launcher.html" >Launcher</a></li>
             </ul>
             <p class="menuitem" >C#:</p>
             <ul>
@@ -29,7 +33,7 @@
             </ul>
             <p class="menuitem" ><b>Inne:</b></p>
             <ul>
-                <li><a class="active" href="hellground.html" >Projekt HellGround</a></li>
+                <li><a href="hellground.html" >Projekt HellGround</a></li>
                 <li><a href="oregoncore.html" >Projekt OregonCore</a></li>
             </ul>        
         </div>
@@ -42,27 +46,23 @@
                 <li><a href="https://oregoncore.com" target="_blank" >OregonCore</a></li>
                 <li><a href="https://gentoo.org" target="_blank" >Gentoo</a></li>
             </ul>
-        </div>
+        </div>  
         <div id="content">
-            <h3>Projekt HellGround</h3>
+            <a rel="lightbox" href="http://uploader.hellground.pl/di/WI1T/screenshot.png" title="launcher" ><img class="info" src="http://uploader.hellground.pl/dt/WI1T/screenshot.png" alt="Launcher" /></a>
+            <h3>HellGround Launcher</h3>
             <p class="descr" >
                 Kilka informacji:<br><br>
-                Strona projektu: <a href="http://wow.hellground.pl" target="_blank" >http://wow.hellground.pl</a><br>
-                Team na BB: <a href="http://dev.hellground.pl" target="_blank" >HellGround</a><br>
-                Typ: Aplikacja konsolowa typu serwer + kilka pod projektów<br>
-                Języki: C++, C, SQL, PHP<br>
-                System operacyjny: *nix (testowane jedynie na rodzinie GNU/Linux), windows
+                Autorzy: <a href="http://dev.lukaasm.pl" target="_blank">lukaasm</a>, <a href="https://bitbucket.org/siof" target="_blank" >Siof</a><br>
+                Repozytorium: <a href="http://dev.hellground.pl/launcher" target="_blank" >http://dev.hellground.pl/launcher</a><br>
+                Typ: Aplikacja desktopowa<br>
+                Język: C++<br>
+                System operacyjny: GNU/Linux, Windows
             </p><br>
             <p>Opis:</p>
             <p>
-                Projekt HellGround jest projektem testowym/edukacyjnym (non-profit) który wystartował w celu powiększania umiejętności programistycznych/administratorskich/etc członków projektu.
-                Bazą dla tego projektu jest ogólno dostępny open sourcowy projekt trinitycore (licencja GPL2) w rewizji 1772. Projekt powstał w grudniu 2008 roku a ja dołączyłem do niego w 2009 jako developer.
-                We wrześniu 2010 roku zostałem head administratorem projektu.<br>
-                Pełny i aktualny skład ekipy oraz zakresy ich obowiązków można znaleźć tutaj: <a href="http://wow.hellground.pl/administracja" target="_blank" >http://wow.hellground.pl/administracja</a>
-            </p>
-            <p>
-                Repozytorium projektu jest prywatne jednak changelog zmian można podglądnąć pod adresem: <a href="http://wow.hellground.pl/changelog/" target="_blank">http://wow.hellground.pl/changelog/</a>.<br>
-                Projekt ten pozwolił mi rozwinąć swoje umiejętności, nauczyć sie wielu rzeczy oraz poznać ciekawych ludzi.
+                Launcher przygotowany dla projektu HellGround. Aplikacja wyświetla podaną stronę www jako swoją zawartość oraz dostosowywuje rozmiar okna to wielkości tej strony.
+                W przypadku niemożliwości załadowania strony zostanie wyświetlona standardowa grafika. Aplikacja działa pod systemami z rodziny 
+                GNU/Linux oraz windows wykorzystując bibliotekę <a href="https://qt.nokia.com/" target="_blank" >QT</a> do stworzenia UI. 
             </p>
         </div> 
         <div id="footer"></div>     

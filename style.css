@@ -85,6 +85,11 @@ p
     text-align: justify;
 }
 
+p.descr
+{
+    text-align: left;
+}
+
 p + p 
 {
     text-indent: 1.5em;
